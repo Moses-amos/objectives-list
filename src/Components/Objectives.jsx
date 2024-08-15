@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {removeObjective} from '../Features/Objective/objectiveSlice'
+import './style.css'
 
 function Objectives() {
 
@@ -9,7 +10,7 @@ function Objectives() {
 
   return (
     <>
-    <div>Objectives</div>
+    <div className='Objective_title'>Objective List</div>
     <ul className="list-none">
         {objectives.map((objective) => (
           <li
